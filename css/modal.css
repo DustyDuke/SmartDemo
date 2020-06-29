@@ -1,0 +1,79 @@
+.wmodal {}
+
+.wmodal.open .modal-overlay,
+.wmodal.open .modal-window {
+	opacity: 1;
+	z-index: 1000;
+}
+.wmodal.hide .modal-overlay,
+.wmodal.hide .modal-window {
+	opacity: 1;
+	z-index: 1000;
+}
+.modal-close {
+	position: absolute;
+	right: -35px;
+	top: -45px;
+	color: #fff;
+	font-size: 32px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.wmodal.open .modal-window {
+transform: translateY(150px);
+transition: transform .2s ease-in;
+}
+.wmodal.open  .modal-overlay {
+	background: rgba( 0, 0, 0, .8);
+}
+.wmodal.hide .modal-window {
+transform: translateY(-200px);
+	transition: transform .2s ease-in;
+}
+.wmodal.hide  .modal-overlay {
+	background: rgba( 0, 0, 0, 0);
+}
+.modal-window, .modal-overlay {
+	opacity: 0;
+	z-index: -1;
+}
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba( 0, 0, 0, 0);
+	transition: background .2s ease-in;
+}
+.modal-window, .modal-overlay {
+	background: rgba( 0, 0, 0, .8);
+}
+.modal-window {
+	width: 700px;
+	min-height: 30%;
+	background-color: #fff;
+	padding: 10px 10px 25px 10px;
+	margin: 0 auto;
+	transform: translateY(-200px);
+}
+@media (max-width: 992px) {
+	.modal-window {
+	width: 700px;
+	}
+}
+@media (max-width: 768px) {
+	.modal-window {
+	width: 500px;
+	}
+}
+@media (max-width: 574px) {
+	.modal-window {
+	width: 400px;
+	}
+}
+@media (max-width: 480px) {
+	.modal-window {
+	width: 250px;
+	}
+}
