@@ -1,4 +1,5 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCKTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,22 +18,22 @@
 <button class="menuToggle" onclick="toggle()"><span class="red">M</span>enu</button>
 <div class="menu" id='menu'>
 <ul>
-<li><a href="#process">Working Process</a></li>
-<li><a href="#features">Featured Works</a></li>
-<li><a href="#service">Services We Prowide</a></li>
-<li><a href="#team">Team Chinen & Skills</a></li>
-<li><a href="#insights">Clients said</a></li>
+<li><a href="#process">Почему мы</a></li>
+<li><a href="#features">Наши проекты</a></li>
+<li><a href="#service">Наши услуги</a></li>
+<li><a href="#team">Команда специалистов</a></li>
+<li><a href="#insights">Клиенты говорят</a></li>
 </ul>
 </div>
 <h1>Диджитал агентство <span class="red">Smart</span></h1>
 
 
-<form action="" class="feedback" id="feedback-form" method="post">
+<form action="/contact-form.php" class="feedback" id="feedback-form" method="post">
 <h3><span class="red">Отправить </span> сообщение</h3>
 <input type="text" placeholder="Ваше имя" required name="contact_name" id="contact_name" value="">
 <input type="text" placeholder="Ваш email" name="contact_email" id="contact_email" value="">
 <input type="text" placeholder="Ваш номер телефона" required name="contact_phone" id="contact_phone" value="">
-<textarea placeholder="Ваше сообщение" name="contact_comments" id="commentsText" rows="5" cols="30" value=""></textarea>
+<textarea placeholder="Ваше сообщение" name="contact_comments" id="commentsText" rows="5" cols="30"></textarea>
 <button class="form-btn" type="submit" >Отправить  <i class="fa fa-arrow-right"></i></button>
 </form>
 </div>
@@ -62,7 +63,7 @@
 </div>
 </div>
 <div class="job col-1 second">
-<h2><i class="fa fa-underline"></i></h2>
+<span><i class="fa fa-underline"></i></span>
 <h3>Сроки</h3>
 <p>Мы выполняем задачи в кратчашие сроки.</p>
 <div class="btn-align"><button class="more">+ Узнать больше</button></div>
@@ -193,7 +194,7 @@
 </main>
 <footer>
 <div class="container">
-<div class="btn-align"><a href="#feedback-form"><button class="more">Напишите нам</button></a></div>
+<div class="btn-align"><button class="more"><a href="#feedback-form">Напишите нам</a></button></div>
 
 <div class="social">
 <p class="col-1"><i class="fa fa-facebook-f"></i>
